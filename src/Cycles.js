@@ -36,7 +36,7 @@ export function symbolsReplace(message) {
   let result = '';
     let index = 0;
     do {
-        if (index > 0 && index % 3 === 0) {
+        if ((index + 1) % 3 === 0) {
             result += '_';
         } else {
             result += message[index];
